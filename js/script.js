@@ -1,25 +1,21 @@
 // Login btn functionality
-document.getElementById('login-btn')
-.addEventListener('click', function (e) {
-    e.preventDefault()
-    const mobileNumber = 01722930883;
-    const pinNumber = 1234;
+document.getElementById("login-btn").addEventListener("click", function (e) {
+  e.preventDefault();
+  const mobileNumber = 01722930883;
+  const pinNumber = 1234;
 
-    const mobileNumberValue = document
-    .getElementById('mobile-number').value
-    const mobileNumberValueConverted = parseInt
-    (mobileNumberValue)
+  const mobileNumberValue = document.getElementById("mobile-number").value;
+  const mobileNumberValueConverted = parseInt(mobileNumberValue);
 
-    const pinNumbervalue = document 
-    .getElementById('pin-number').value
-    const pinNumbervalueConverted = parseInt
-    (pinNumbervalue)
+  const pinNumberValue = document.getElementById("pin-number").value;
+  const pinNumberValueConverted = parseInt(pinNumberValue);
 
-    if (mobileNumberValueConverted === mobileNumber
-        && pinNumbervalueConverted === pinNumber) {
-            window.location.href="home.html"
-        }
-        else {
-            console.log('invalid')
-        }
-})
+  if (
+    mobileNumberValueConverted === mobileNumber &&
+    pinNumberValueConverted === pinNumber
+  ) {
+    window.location.href = "home.html";
+  } else {
+    console.log("invalid");
+  }
+});
